@@ -1,7 +1,10 @@
 body {
   margin: 0;
+
   font-family: "Open Sans", sans-serif;
-  background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+
+  background: linear-gradient(180deg, rgb(227, 255, 248, 0) 82.08%, rgb(227, 255, 248, 0.38) 100%);
+
   min-height: 100vh;
 }
 
@@ -11,96 +14,104 @@ body {
   padding-top: 65px;
 }
 
-nav {
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   margin-bottom: 55px;
 }
 
-ul {
-  list-style: none;
+.list {
   display: flex;
   gap: 48px;
+  list-style: none;
   margin: 0;
   padding: 0;
-  font-family: 'Mulish', sans-serif;
 }
 
 a {
+  color: #1f1534;
   text-decoration: none;
-  color: #1F1534;
 }
 
-ul li a {
-  opacity: 0.5;
+.list .item a {
+    opacity: 0.5;
 }
 
-ul li a:hover {
+.list .item a:hover {
   font-weight: bold;
   opacity: 1;
 }
 
-h1 {
-  font-family: 'Mulish', sans-serif;
-  font-size: 49px;
-  line-height: 56px;
-  color: #1F1534;
-  font-weight: normal;
-  width: 490px;
-
+.list,
+.title {
+  font-family: "Mulish", sans-serif;
 }
 
-main {
+.main {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-h1 span {
-  color: #89C5CC;
+.title {
+  font-size: 49px;
+  line-height: 56px;
+  color: #1f1534;
+
+  font-weight: normal;
+
+  width: 490px;
+}
+
+.title span {
+  color: #89c5cc;
   font-weight: bold;
 }
 
-section p {
+.subtitle {
   font-size: 14px;
   line-height: 28px;
-  color: #7D7987;
+  color: #7d7987;
+
   margin: 40px 0;
 }
 
-button {
+.button {
+  color: white;
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
-  color: white;
+
   background: #69B99D;
-  border: none;
+  border: 0;
+  padding: 14px 32px 15px;
+
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 14px 32px 15px;
+
   border-radius: 4px;
+
   cursor: pointer;
 }
 
-button:hover {
-  background: #437966;
-}
-
-footer {
+.footer {
   font-size: 14px;
   line-height: 28px;
+
   text-align: center;
+
   margin-top: 80px;
 }
 
-footer a {
+.footer a {
   font-weight: bold;
 }
 
 #balls {
-  position: fixed;
-  bottom: 0px;
-  right: 0px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
 }
